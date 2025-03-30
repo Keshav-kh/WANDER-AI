@@ -457,11 +457,11 @@ def call_gemini(prompt):
     Calls the Gemini API using the provided prompt.
     This function uses the new endpoint and payload structure.
     """
-    ENTER_YOUR_API_KEY = "AIzaSyAaYi4XZ2oGlQVWfduDhUSRlBgWVPYizL8"
+    ENTER_YOUR_API_KEY = "ENTER_YOU_API_KEY"
 # -----------------------------
 # Part 3: Set Up Google Gemini API
 # -----------------------------
-    genai.configure(api_key="AIzaSyAaYi4XZ2oGlQVWfduDhUSRlBgWVPYizL8")
+    genai.configure(api_key="ENTER_YOU_API_KEY")
     gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
     response = gemini_model.generate_content(prompt)
@@ -865,7 +865,7 @@ Do not include any extra explanation. Output only valid JSON.
         return None
 
 def main():
-    api_key = "4e1c7c0180853cf4cbc16e0aad62e5e83b7f08e131407fe671a7e915e52c8fdf"
+    api_key = "ENTER_YOU_API_KEY"
     
     outbound_date = input("Enter outbound (departure) date (YYYY-MM-DD): ").strip()
     return_date   = input("Enter return date (YYYY-MM-DD): ").strip()
