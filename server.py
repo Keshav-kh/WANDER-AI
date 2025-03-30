@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyAaYi4XZ2oGlQVWfduDhUSRlBgWVPYizL8")
+genai.configure(api_key="ENTER_YOU_API_KEY")
 gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Function to copy JSON files to src/pages directory
