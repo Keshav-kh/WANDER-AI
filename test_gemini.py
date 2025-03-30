@@ -7,7 +7,7 @@ def test_gemini_api():
     """
     try:
         # Configure the API
-        api_key = "AIzaSyAaYi4XZ2oGlQVWfduDhUSRlBgWVPYizL8"
+        api_key = "ENTER_YOU_API_KEY"
         genai.configure(api_key=api_key)
         
         # Create a model instance
